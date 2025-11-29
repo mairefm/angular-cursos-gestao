@@ -1,0 +1,165 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234",
+      "role": "ADMIN"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "role": "USER"
+    },
+    {
+      "id": "3",
+      "username": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "role": "USER"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Frontend Developer con Angular",
+      "description": "Aprende Angular desde cero con componentes, servicios, formularios reactivos y buenas prácticas profesionales.",
+      "beginDate": "2024-03-01",
+      "endDate": "2024-09-30",
+      "status": "STARTED"
+    },
+    {
+      "id": "2",
+      "title": "Introducción a la Programación para Mujeres",
+      "description": "Curso ideal para principiantes: lógica, variables, funciones y estructuras fundamentales para comenzar en TI.",
+      "beginDate": "2024-01-15",
+      "endDate": "2024-05-30",
+      "status": "FINISHED"
+    },
+    {
+      "id": "3",
+      "title": "JavaScript Moderno",
+      "description": "Domina JavaScript moderno con enfoque práctico: clases, módulos, promesas, async/await y manipulación del DOM.",
+      "beginDate": "2024-02-01",
+      "endDate": "2024-06-01",
+      "status": "FINISHED"
+    },
+    {
+      "id": "5",
+      "title": "UI/UX Design para Desarrolladoras",
+      "description": "Aprende diseño centrado en el usuario, wireframes, prototipos y mejores prácticas de diseño accesible.",
+      "beginDate": "2024-04-05",
+      "endDate": "2024-09-10",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "6",
+      "title": "Fullstack con Node.js y Express",
+      "description": "Construye APIs REST modernas con Node.js, Express, middlewares, validación y autenticación.",
+      "beginDate": "2024-05-10",
+      "endDate": "2024-12-10",
+      "status": "STARTED"
+    },
+    {
+      "id": "7",
+      "title": "React Profesional",
+      "description": "Aprende React con hooks, componentes reutilizables, estados globales y consumo de APIs.",
+      "beginDate": "2024-03-12",
+      "endDate": "2024-09-12",
+      "status": "FINISHED"
+    },
+    {
+      "id": "8",
+      "title": "Machine Learning Básico",
+      "description": "Primeros pasos en ML: modelos supervisados, clasificación, regresión y preparación de datos.",
+      "beginDate": "2024-06-01",
+      "endDate": "2024-12-01",
+      "status": "SCHEDULED"
+    },
+    {
+      "id": "9",
+      "title": "Ciberseguridad para Principiantes",
+      "description": "Aprende seguridad digital, mejores prácticas, tipos de ataques, contramedidas y protección personal.",
+      "beginDate": "2024-05-01",
+      "endDate": "2024-11-01",
+      "status": "STARTED"
+    },
+    {
+      "id": "10",
+      "title": "Scrum y Metodologías Ágiles 1",
+      "description": "Entiende Scrum, roles, ceremonias y herramientas clave para equipos de desarrollo modernos.",
+      "beginDate": "2024-01-10",
+      "endDate": "2024-04-10",
+      "status": "FINISHED"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "firstName": "Ana Cristina",
+      "lastName": "Silva",
+      "email": "ana.silva@example.com",
+      "course": "Frontend Developer con Angular",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "2",
+      "firstName": "Mariana",
+      "lastName": "Gómez",
+      "email": "mariana.gomez@example.com",
+      "course": "Introducción a la Programación para Mujeres",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "3",
+      "firstName": "Carla",
+      "lastName": "Pereira",
+      "email": "carla.pereira@example.com",
+      "course": "JavaScript Moderno",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "4",
+      "firstName": "Lucía",
+      "lastName": "Fernández",
+      "email": "lucia.fernandez@example.com",
+      "course": "Python para Data Science",
+      "status": "GRADUATED"
+    },
+    {
+      "id": "5",
+      "firstName": "Julia",
+      "lastName": "Rodrigues",
+      "email": "julia.rodrigues@example.com",
+      "course": "Fullstack con Node.js y Express",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "6",
+      "firstName": "Camila",
+      "lastName": "Santos",
+      "email": "camila.santos@example.com",
+      "course": "React Profesional",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "7",
+      "firstName": "Paula",
+      "lastName": "Martínez",
+      "email": "paula.martinez@example.com",
+      "course": "UI/UX Design para Desarrolladoras",
+      "status": "INACTIVE"
+    },
+    {
+      "id": "8",
+      "firstName": "Beatriz",
+      "lastName": "Costa",
+      "email": "beatriz.costa@example.com",
+      "course": "Machine Learning Básico",
+      "status": "GRADUATED"
+    }
+  ]
+}

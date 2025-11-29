@@ -1,0 +1,39 @@
+<div class="login-container">
+  <div class="login-left">
+    <div class="left-content">
+      <img src="assets/img/women-in-tech-logo.png" class="logo" />
+
+      <h1 class="title">Women in Tech</h1>
+      <p class="subtitle">
+        Plataforma de aprendizaje para futuras desarrolladoras.
+      </p>
+    </div>
+    <img src="assets/img/women-dev.png" class="hero-img" />
+  </div>
+
+  <div class="login-right">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title>Inicio de Sesión</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <mat-form-field appearance="fill" class="login-field">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email" />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="login-field">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" formControlName="password" />
+          </mat-form-field>
+
+          <button mat-raised-button class="login-btn">
+            Iniciar Sesión
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

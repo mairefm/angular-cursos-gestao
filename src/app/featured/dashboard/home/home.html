@@ -1,0 +1,83 @@
+<header class="home-header">
+  <h1 class="home-title">Bienvenida, {{ (user$ | async)?.username }}</h1>
+  <p class="home-subtitle">
+    Aquí tienes un resumen rápido de la actividad de esta semana en la plataforma.
+  </p>
+</header>
+
+@if ((user$ | async)?.role === 'ADMIN') {
+
+<mat-card class="chart-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>Resumen general de la semana</mat-card-title>
+    <mat-card-subtitle>Cursos, alumnos y finalización</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <div class="metric-row">
+      <span>Cursos finalizados</span>
+      <span>82%</span>
+    </div>
+    <mat-progress-bar mode="determinate" [value]="82"></mat-progress-bar>
+
+    <div class="metric-row">
+      <span>Lecciones completadas</span>
+      <span>65%</span>
+    </div>
+    <mat-progress-bar mode="determinate" [value]="65" color="accent"></mat-progress-bar>
+
+    <div class="metric-row metric-row--title">
+      <span>Alumnos activos esta semana</span>
+      <span>148</span>
+    </div>
+
+    <div class="course-summary-grid">
+      <div class="course-summary-card">
+        <h4 class="course-summary-title">Backend con Node</h4>
+        <p class="course-summary-number">35 alumnos activos</p>
+        <p class="course-summary-note">Nivel intermedio</p>
+      </div>
+
+      <div class="course-summary-card">
+        <h4 class="course-summary-title">Angular desde cero</h4>
+        <p class="course-summary-number">27 alumnos activos</p>
+        <p class="course-summary-note">Nivel inicial</p>
+      </div>
+
+      <div class="course-summary-card">
+        <h4 class="course-summary-title">Fundamentos de TypeScript</h4>
+        <p class="course-summary-number">19 alumnos activos</p>
+        <p class="course-summary-note">En progreso</p>
+      </div>
+    </div>
+
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-stroked-button color="primary">Ver reporte completo</button>
+    <button mat-flat-button color="accent">Exportar</button>
+  </mat-card-actions>
+</mat-card>
+
+} @else {
+
+<section class="home-user">
+  <div class="user-grid">
+
+    <mat-card class="user-card">
+      <h3 class="user-card__title">Tus cursos activos</h3>
+      <p class="user-card__info">Actualmente tienes 3 cursos en progreso.</p>
+      <button mat-flat-button color="primary">Ver mis cursos</button>
+    </mat-card>
+
+    <mat-card class="user-card">
+      <h3 class="user-card__title">Progreso general</h3>
+      <p class="user-card__info">Has completado 42% del contenido total.</p>
+      <mat-progress-bar mode="determinate" [value]="42"></mat-progress-bar>
+    </mat-card>
+
+  </div>
+</section>
+
+}
