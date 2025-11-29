@@ -3,8 +3,6 @@
 Aplicação desenvolvida como **projeto final do curso de Angular da CoderHouse**.  
 Trata-se de um **painel administrativo** para gestão de **cursos** e **alumnas**, com autenticação, controle de permissões, CRUDs completos, filtros avançados e UI moderna baseada no tema **Women in Tech**.
 
-Ideal como projeto de portfólio para demonstrar domínio de Angular moderno e boas práticas de frontend.
-
 ---
 
 ## ✨ Funcionalidades
@@ -84,8 +82,9 @@ http://localhost:3000/students
 
 ## 👩🏻‍💻 Autora
 
-Mairê Malheiros
-Desenvolvedora & Instrutora de Tecnologia
-GitHub: @mairefm
+**Mairê Malheiros**  
+Desenvolvedora & Instrutora de Tecnologia  
 
-LinkedIn: Mairê Malheiros
+🔗 **GitHub:** [@mairefm](https://github.com/mairefm)  
+🔗 **LinkedIn:** [Mairê Malheiros](https://www.linkedin.com/in/maire-malheiros/)
+
